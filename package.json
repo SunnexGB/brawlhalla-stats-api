@@ -1,0 +1,27 @@
+{
+  "name": "brawlhalla-stats-api",
+  "version": "1.0.0",
+  "description": "A library for working with brawlhalla api without the need to have an official api_key.Created to simplify sending requests to stats.brawlhalla.fr.",
+  "main": "src/index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "brawlhalla",
+    "api",
+    "brawlhalla-API",
+    "brawlhalla-lib"
+  ],
+  "author": "sunnexgb",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "cheerio": "^1.0.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}

@@ -1,0 +1,10 @@
+const main_info = require('./main')
+const duoranked = require('./duoranked')
+const clan_list = require('./pl_clan')
+const legends_info = require('./legends')
+const dashboard = require('./dashboard')
+const data1v1 = require('./data1v1')
+const data2v2 = require('./data2v2')
+const search_clan = require('./search_clan')
+const search_player = require('./search_player')
+module.exports = { main_info, duoranked, clan_list, legends_info, dashboard, data1v1, data2v2, search_clan, search_player }
