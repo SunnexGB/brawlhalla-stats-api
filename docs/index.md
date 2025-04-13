@@ -77,7 +77,7 @@ search_player("nickname", ["all"], ["all"])
 ### Clan
 
 ```javascript
-const { search_clan, clan } = require("brawlhalla-stats-api");
+const { search_clan, clanlist } = require("brawlhalla-stats-api");
 
 search_clan("clanName")
   .then((data) => {
@@ -87,7 +87,7 @@ search_clan("clanName")
     console.error("Error:", error);
   });
 
-clan("playerId")
+clanlist("playerId")
   .then((data) => {
     console.log("Player Clan Info:", data);
   })
