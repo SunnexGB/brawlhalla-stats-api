@@ -135,7 +135,6 @@ topcharacter("characterName")
 ```javascript
 const { dashboard } = require("brawlhalla-stats-api");
 
-dashboard
   .char_winrate()
   .then((data) => {
     console.log("Character Win Rates:", data);
@@ -144,7 +143,6 @@ dashboard
     console.error("Error:", error);
   });
 
-dashboard
   .playrate()
   .then((data) => {
     console.log("Character Play Rates:", data);
@@ -153,7 +151,6 @@ dashboard
     console.error("Error:", error);
   });
 
-dashboard
   .variation_hero()
   .then((data) => {
     console.log("Weekly Win Rate Variations:", data);
