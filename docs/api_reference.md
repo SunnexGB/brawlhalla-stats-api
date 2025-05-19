@@ -84,6 +84,9 @@ document for all functions for brawlhalla lib and explanation of the basics
 - [topcharacter](#topcharacter)
 - [utility Functions](#utility-functions)
 - [getpatch](#getpatch)
+- [updaters](#updaters)
+- [update_clan](#update_clan)
+- [update_player](#update_player)
 
 ## player Information
 
@@ -343,8 +346,6 @@ Example usage:
 
 ```javascript
 const { dashboard } = require("brawlhalla-stats-api");
-
-dashboard
   .char_winrate()
   .then((data) => console.log(data))
   .catch((error) => console.error(error));
@@ -368,8 +369,6 @@ Example usage:
 
 ```javascript
 const { dashboard } = require("brawlhalla-stats-api");
-
-dashboard
   .playrate()
   .then((data) => console.log(data))
   .catch((error) => console.error(error));
@@ -393,8 +392,6 @@ Example usage:
 
 ```javascript
 const { dashboard } = require("brawlhalla-stats-api");
-
-dashboard
   .variation_hero()
   .then((data) => console.log(data))
   .catch((error) => console.error(error));
@@ -435,6 +432,56 @@ getpatch()
 - Promise that resolves to a string containing the current patch ID.
 
 Note: This function is used internally by most API functions to ensure they use the current patch data.
+
+---
+
+## updaters
+
+## update_player
+
+Updates player information based on player ID.
+
+Example usage:
+
+```javascript
+const { update_player } = require("brawlhalla-stats-api");
+
+update_player("playerId")
+  .then((data) => console.log(data))
+  .catch((error) => console.error(error));
+```
+
+**Parameters:**
+
+- playerId (string): The ID of the player to be updated.
+
+**Return:**
+
+- Promise that resolves to the updated player information in JSON format.
+
+---
+
+## update_clan
+
+Updates clan information based on clan ID.
+
+Example usage:
+
+```javascript
+const { update_clan } = require("brawlhalla-stats-api");
+
+update_clan("clanId")
+  .then((data) => console.log(data))
+  .catch((error) => console.error(error));
+```
+
+**Parameters:**
+
+- clanId (string): The ID of the clan to be updated.
+
+**Return:**
+
+- Promise that resolves to the updated clan information in JSON format.
 
 ---
 

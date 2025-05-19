@@ -7,4 +7,6 @@ const data1v1 = require('./data1v1')
 const data2v2 = require('./data2v2')
 const search_clan = require('./search_clan')
 const search_player = require('./search_player')
-module.exports = { main_info, duoranked, clan_list, legends_info, dashboard, data1v1, data2v2, search_clan, search_player }
+const update_player = require("./update_player")
+const update_clan = require("./update_clan")
+module.exports = { main_info, duoranked, clan_list, legends_info, dashboard, data1v1, data2v2, search_clan, search_player,update_player,update_clan }

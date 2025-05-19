@@ -20,14 +20,23 @@ Based on https://stats.brawlhalla.fr/ and https://api.brawlhalla.fr/ for api int
 
 Install the package using npm:
 
-`npm i brawlhalla-stats-api`
+```javascript
+npm i brawlhalla-stats-api
+```
 
 ## Getting Started
 
 To use brawlhalla-stats-api library, first import required functions:
 
-`const brawlhallaAPI = require('brawlhalla-stats-api');` or example
-`const { main_info, search_player, data1v1 } = require('brawlhalla-stats-api');`
+```javascript
+const brawlhallaAPI = require("brawlhalla-stats-api");
+```
+
+or example
+
+```javascript
+const { main_info, search_player, data1v1 } = require("brawlhalla-stats-api");
+```
 
 ## Features
 
