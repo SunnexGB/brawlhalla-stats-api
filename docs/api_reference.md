@@ -85,8 +85,8 @@ document for all functions for brawlhalla lib and explanation of the basics
 - [utility Functions](#utility-functions)
 - [getpatch](#getpatch)
 - [updaters](#updaters)
-- [update_clan](#update_clan)
 - [update_player](#update_player)
+- [update_clan](#update_clan)
 
 ## player Information
 
