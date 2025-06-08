@@ -1,6 +1,5 @@
 const axios = require('axios');
 const { defurl } = require('../configuration/config');
-
 const search_clan = (clanName) => {
   return axios.get(`${defurl}searchClan`, {
     params: { name: clanName }

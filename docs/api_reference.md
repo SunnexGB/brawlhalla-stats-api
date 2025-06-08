@@ -92,7 +92,7 @@ document for all functions for brawlhalla lib and explanation of the basics
 
 ### main_info
 
-Gets main information about player.
+Retrieves main information about a player and total time played.
 
 Example usage:
 
@@ -106,11 +106,13 @@ main_info("playerId")
 
 **Parameters:**
 
-- playerId (string): ID of the player for which information is to be retrieved.
+- `playerId` (string): ID of the player whose information is being requested.
 
-**Return:**
+**Returns:**
 
-- Promise that resolves to an object containing main player information in json.
+- `Promise` that resolves to an object with following properties:
+- `mainResult` – JSON object containing player’s main profile data.
+- `inGame` – string representing total playtime across all legends, formatted as `"Xh Ym Zs"`.
 
 ---
 

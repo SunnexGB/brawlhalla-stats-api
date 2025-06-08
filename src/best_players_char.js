@@ -1,7 +1,6 @@
 const axios = require('axios');
 const { defurl } = require('../configuration/config');
 const getpatch = require('../filters/Patchs.js');
-
 const topcharacter = async (characterName) => {
   try {
     const patch = await getpatch();
