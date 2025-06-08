@@ -1,6 +1,6 @@
 {
   "name": "brawlhalla-stats-api",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A library for working with brawlhalla api without the need to have an official api_key.Created to simplify sending requests to stats.brawlhalla.fr.",
   "main": "src/index.js",
   "directories": {
