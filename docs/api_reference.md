@@ -198,6 +198,54 @@ search_player("nickname", listTier, listRegion)
 
 ---
 
+### Sreamidm
+
+Search players by SteamLink.
+
+Example usage:
+
+```javascript
+const { Sreamidm } = require("brawlhalla-stats-api");
+
+Sreamidm("vanityUrl")
+  .then((steamId) => console.log(steamId))
+  .catch((error) => console.error(error));
+```
+
+**Parameters:**
+
+- vanityUrl (string): Vanity URL steam user.
+
+**Return:**
+
+- Promise that resolves to a string representing the user's steam ID.
+
+---
+
+### steambhdata
+
+Search players by SteamLink.
+
+Example usage:
+
+```javascript
+const { steambhdata } = require("brawlhalla-stats-api");
+
+steambhdata("steamId")
+  .then((data) => console.log(data))
+  .catch((error) => console.error(error));
+```
+
+**Parameters:**
+
+- steamId (string): Steam ID player whose brawlhalla data is being requested.
+
+**Return:**
+
+- Promise that resolves to a JSON object containing player’s brawlhalla data.
+
+---
+
 ## clan information
 
 ### clanlist

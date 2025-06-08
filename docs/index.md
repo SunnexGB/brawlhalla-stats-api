@@ -46,6 +46,7 @@ const { main_info, search_player, data1v1 } = require("brawlhalla-stats-api");
 - **Leaderboards**: Access 1v1 and 2v2 leaderboards with filtering options
 - **dashboard Statistics**: Retrieve character win rates, play rates, and weekly variations
 - **Automatic Patch Management**: All API calls use current game patch automatically
+- **search data for steam link** : search data for steam link
 
 ## Usage Examples
 
@@ -77,6 +78,26 @@ const { search_player } = require("brawlhalla-stats-api");
 search_player("nickname", ["all"], ["all"])
   .then((data) => {
     console.log("Search Results:", data);
+  })
+  .catch((error) => {
+    console.error("Error:", error);
+  });
+
+const { Sreamidm } = require("brawlhalla-stats-api");
+
+Sreamidm("vanityUrl")
+  .then((steamId) => {
+    console.log("stean id:", steamId);
+  })
+  .catch((error) => {
+    console.error("Error:", error);
+  });
+
+const { steambhdata } = require("brawlhalla-stats-api");
+
+steambhdata("steamId")
+  .then((data) => {
+    console.log("brawlhalla player daata:", data);
   })
   .catch((error) => {
     console.error("Error:", error);
