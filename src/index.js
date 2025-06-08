@@ -9,4 +9,6 @@ const search_clan = require('./search_clan')
 const search_player = require('./search_player')
 const update_player = require("./update_player")
 const update_clan = require("./update_clan")
-module.exports = { main_info, duoranked, clan_list, legends_info, dashboard, data1v1, data2v2, search_clan, search_player,update_player,update_clan }
+const Sreamidm = require("./steam")
+const steambhdata = require("./steam")
+module.exports = { main_info, duoranked, clan_list, legends_info, dashboard, data1v1, data2v2, search_clan, search_player,update_player,update_clan,Sreamidm,steambhdata }
